@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 from pathlib import Path
 
-drawing_fname = Path('./data/drawing_chess/undistortion_drawing_img2.png')
-raw_fname = Path("./data/undistortion_chess/undistortion_capture1.png")
+drawing_fname = Path('./data/drawing_chess/draw_undistortion.jpg')
+raw_fname = Path("./data/undistortion_chess/undistortion_img.jpg")
 
 
 def mouse_event(event, x, y, flags, param):

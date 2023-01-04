@@ -28,7 +28,8 @@ objp[:,:2] = np.mgrid[0:wc,0:hc].T.reshape(-1,2)
 # Arrays to store object points and image points from all the images.
 objpoints = [] # 3d point in real world space
 imgpoints = [] # 2d points in image plane.
-img_dirs = glob.glob('./data/raw_chess/*.png')
+# img_dirs = glob.glob('./data/raw_chess/*.png')
+img_dirs = ['./data/raw_chess/raw.jpg']
 
 for img_dir in img_dirs:
     frame = cv2.imread(img_dir)
