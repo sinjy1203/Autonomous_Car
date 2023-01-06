@@ -28,8 +28,8 @@ objp[:,:2] = np.mgrid[0:wc,0:hc].T.reshape(-1,2)
 # Arrays to store object points and image points from all the images.
 objpoints = [] # 3d point in real world space
 imgpoints = [] # 2d points in image plane.
-# img_dirs = glob.glob('./data/raw_chess/*.png')
-img_dirs = ['./data/raw_chess/raw.jpg']
+img_dirs = glob.glob('./data/raw_chess/*.png')
+# img_dirs = ['./data/raw_chess/raw.jpg']
 
 for img_dir in img_dirs:
     frame = cv2.imread(img_dir)
@@ -37,7 +37,7 @@ for img_dir in img_dirs:
 
     # Find the chess board corners
     ret, corners = cv2.findChessboardCorners(gray, (wc,hc),None)
-
+    print(ret)
     # If found, add object points, image points (after refining them)
     if ret == True:
         objpoints.append(objp)
@@ -49,15 +49,16 @@ for img_dir in img_dirs:
         frame = cv2.drawChessboardCorners(frame, (wc,hc), corners2,ret)
         print("chessobard corner detected. curr num objpoints : " + str(len(objpoints)) +  ", curr num imgpoints : " + str(len(imgpoints)))
 
-    cv2.imshow('res',frame)
-    time.sleep(5)
-    if cv2.waitKey(20) & 0xFF == ord('q'):
-        break
+    # cv2.imshow('res',frame)
+    # time.sleep(5)
+    # if cv2.waitKey(20) & 0xFF == ord('q'):
+    #     break
 
+print("finish")
 ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1],None,None)
 
 
-reprojection_error(imgpoints, objpoints, mtx, dist, rvecs, tvecs)
+error = reprojection_error(imgpoints, objpoints, mtx, dist, rvecs, tvecs)
 
 
 cv2.destroyAllWindows()
@@ -67,6 +68,8 @@ print("camera matrix")
 print(mtx)
 print("distortion coeff")
 print(dist)
+print("error")
+print(error)
 
 
 # Saving the objects:

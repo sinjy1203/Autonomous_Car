@@ -47,7 +47,7 @@ while True:
 
     cv2.imshow('res',res)
     if cv2.waitKey(1) == ord('c'):
-        img = cv2.imwrite(str(undistortion_dir / 'undistortion_capture{}.png').format(cnt), frame)
+        img = cv2.imwrite(str(undistortion_dir / 'undistortion_capture{}.png').format(cnt), res)
         cnt += 1
     if cv2.waitKey(20) & 0xFF == ord('q'):
         break
