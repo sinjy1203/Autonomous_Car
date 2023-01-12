@@ -1,38 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a573503e-1d92-4453-96b0-7f8cf24d1bdb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Autonomous_Car.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Autonomous_Car.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calibration.py" beforeDir="false" afterPath="$PROJECT_DIR$/calibration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWB.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calibration.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cam_calib.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/draw_draw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/draw_undistortion.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/drawing_img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/undistortion_drawing_img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/undistortion_drawing_img2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/raw.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture0.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture1.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/undistortion_chess/undistortion_img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/draw_line.py" beforeDir="false" afterPath="$PROJECT_DIR$/draw_line.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/undistortion.py" beforeDir="false" afterPath="$PROJECT_DIR$/undistortion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/capture.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_frame.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chessboard_capture.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/draw_line.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/undistortion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/undistortion_img.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/white_balance/Deep_White_Balance/PyTorch/utilities/deepWB.py" beforeDir="false" afterPath="$PROJECT_DIR$/white_balance/Deep_White_Balance/PyTorch/utilities/deepWB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolov5/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/yolov5/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +36,10 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/white_balance/Deep_White_Balance" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JiS81nQCg8x9fFpgH7vgALQ1Iq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -55,13 +47,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-  </component>
-  <component name="RunManager" selected="Python.draw_line">
-    <configuration name="calibration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.DAWB_camera (1)">
+    <configuration name="AWB" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Autonomous_Car" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -69,11 +63,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/white_balance" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/calibration.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/white_balance/AWB.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="chessboard_capture" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="DAWB_camera (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Autonomous_Car" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,11 +84,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/white_balance/Deep_White_Balance/PyTorch" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chessboard_capture.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/white_balance/Deep_White_Balance/PyTorch/DAWB_camera.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DAWB_camera" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Autonomous_Car" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/white_balance" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/white_balance/DAWB_camera.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DeepAWB" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Autonomous_Car" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/white_balance/Deep_White_Balance/PyTorch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/white_balance/Deep_White_Balance/PyTorch/DeepAWB.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,55 +160,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="undistortion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Autonomous_Car" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/undistortion.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="undistortion_img" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Autonomous_Car" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/undistortion_img.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DAWB_camera (1)" />
+        <item itemvalue="Python.DeepAWB" />
+        <item itemvalue="Python.DAWB_camera" />
+        <item itemvalue="Python.AWB" />
         <item itemvalue="Python.draw_line" />
-        <item itemvalue="Python.undistortion" />
-        <item itemvalue="Python.calibration" />
-        <item itemvalue="Python.chessboard_capture" />
-        <item itemvalue="Python.undistortion_img" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +191,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
