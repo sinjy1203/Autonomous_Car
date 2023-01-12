@@ -15,7 +15,7 @@ def white_balance(img):
     return result
 
 # W, H = 1900, 1090
-cap = cv.VideoCapture(0)
+cap = cv.VideoCapture(1)
 # cap.set(cv.CAP_PROP_FRAME_WIDTH, W)
 # cap.set(cv.CAP_PROP_FRAME_HEIGHT, H)
 
