@@ -1,14 +1,19 @@
+## 이미지에 선을 그어서 왜곡이 잘 보정됬는지 확인하기 위한 코드
+
+## import
 import cv2
 import numpy as np
 from pathlib import Path
 from glob import glob
 
+## 선 그을 이미지와 output에 대한 디렉토리
 # drawing_fname = Path('./data/drawing_chess/draw_undistortion.jpg')
 # raw_fname = Path("./data/undistortion_chess/undistortion_img.jpg")
 input_pattern = Path("./data/raw_chess/*.png")
 output_dir = Path("./data/drawing_chess")
 
-
+## 선을 긋기 위한 마우스 이벤트
+# 그을 선의 양쪽을 왼쪽 마우스로 클릭하면 됨
 def mouse_event(event, x, y, flags, param):
     global pos, cnt, output_path
     if event == cv2.EVENT_FLAG_LBUTTON and cnt == 0:
@@ -22,6 +27,7 @@ def mouse_event(event, x, y, flags, param):
         print(2)
         cnt = 0
 
+## 이미지 들에 대해 선 긋기
 for input_path in glob(str(input_pattern)):
     cnt = 0
     src = cv2.imread(str(input_path))
