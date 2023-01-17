@@ -11,13 +11,22 @@ import shutil
 ## calibration module
 # save checker board img, camera calibration, undistort webcam, draw line for check distortion
 class Cal:
-    def __init__(self, frame_shape=(1900, 1090), param_dir='./camera_parameter',
+    def __init__(self, frame_shape=(1920, 1080), param_dir='./camera_parameter',
+                 param_name='cam_calib.pkl',
                  checkerboards_dir='./data/raw_checkerboard',
-                 undistorted_checkerboards_dir='./data/undistortion_checkerboard'):
+                 undistorted_checkerboards_dir='./data/undistortion_checkerboard',
+                 predict=False):
         self.W, self.H = frame_shape # img shape
         self.param_dir = Path(param_dir) # camera parameter save dir
         self.checkerboards_dir = Path(checkerboards_dir) # checkerboards img dir
         self.undistorted_checkerboards_dir = Path(undistorted_checkerboards_dir)
+
+        self.mat, self.dist = None, None
+        if predict:
+            param_name = self.param_dir / param_name
+            if not param_name.exists():
+                raise Exception("no calculated camera parameter")
+            self.mat, self.dist = self.get_cameramat_dist_(param_name)
 
     def reprojection_error_(self, imgpoints, objpoints, mtx, dist, rvecs, tvecs):
         mean_error = 0
@@ -139,13 +148,53 @@ class Cal:
         print(dist)
         return mat, dist
 
+    def undistort_image(self, image):
+        # 카메라 파라미터 개선
+        # 0: 왜곡 보정 후 검은 픽셀 제거, 1: 검은 픽셀 보존
+        newcameramtx, roi = cv2.getOptimalNewCameraMatrix(self.mat, self.dist, (self.W, self.H), 1, (self.W, self.H))
+
+        # 왜곡 보정
+        mapx, mapy = cv2.initUndistortRectifyMap(self.mat, self.dist, None, newcameramtx, (self.W, self.H), 5)
+        undistortion_image = cv2.remap(image, mapx, mapy, cv2.INTER_LINEAR)
+
+        return undistortion_image, roi
+
     def undistort_webcam(self, device=1, param_name='cam_calib.pkl'):
         if not self.undistorted_checkerboards_dir.exists():
             self.undistorted_checkerboards_dir.mkdir(exist_ok=True)
 
-        mat, dist = self.get_cameramat_dist_()
+        cap = cv2.VideoCapture(1)
+        cap.set(cv2.CAP_PROP_FRAME_WIDTH, self.W)
+        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, self.H)
 
+        ret, frame = cap.read()
+        h, w = frame.shape[:2]
+
+        # 카메라 파라미터 개선
+        # 0: 왜곡 보정 후 검은 픽셀 제거, 1: 검은 픽셀 보존
+
+        # 캠 왜곡 보정
+        cnt = 0 # 보정 된 이미지 캡처시 다른 이름으로 저장하기 위해
+        while True:
+            ret, frame = cap.read()
+            # gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+            frame, roi = self.undistort_image(frame)
+
+            # crop the image
+            x,y,w,h = roi
+            frame = frame[y:y+h, x:x+w]
+
+            cv2.imshow('frame', frame)
+            if cv2.waitKey(1) == ord('c'):  # 왜곡 보정된 이미지 캡처
+                img = cv2.imwrite(str(self.undistorted_checkerboards_dir / 'undistortion_capture{}.png').format(cnt), frame)
+                cnt += 1
+            if cv2.waitKey(20) & 0xFF == ord('q'):
+                break
+
+        cap.release()
+        cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    cal = Cal()
-    cal.camera_calibration(show_corner=False)
+    cal = Cal(predict=True)
+    cal.undistort_webcam()
