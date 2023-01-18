@@ -5,174 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a573503e-1d92-4453-96b0-7f8cf24d1bdb" name="Default Changelist" comment="auto white balance with deep">
-      <change afterPath="$PROJECT_DIR$/AutoWhiteBalance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calibration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calibration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera_calibration/cam_calib.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/chess0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/chess1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/chess10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/chess100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/chess101.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/undistortion_capture0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/undistortion_capture1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/undistortion_capture2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/undistortion_capture3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/undistortion_capture4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/drawing_chess/undistortion_capture5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess101.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess102.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess103.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess104.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess105.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess106.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess107.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess108.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess109.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess110.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess111.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess112.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess113.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess115.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess116.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess117.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess118.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess119.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess120.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess121.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess122.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess123.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess124.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess125.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess126.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess127.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess129.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess130.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess131.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess132.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess133.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess134.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess135.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess137.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess138.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess139.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess140.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess141.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess142.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess143.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess61.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess62.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess63.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess65.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess66.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess67.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess68.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess69.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess71.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess73.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess74.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess77.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess78.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess79.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess81.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess82.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess83.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess84.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess85.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess86.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess87.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess88.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess89.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess91.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess92.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess93.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess94.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess95.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess97.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/raw_chess/chess99.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/undistortion_chess/undistortion_capture7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AutoWhiteBalance.py" beforeDir="false" afterPath="$PROJECT_DIR$/AutoWhiteBalance.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,15 +32,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/011/PycharmProjects/GIGACHA",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/011/PycharmProjects/GIGACHA&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.Calibration">
+}</component>
+  <component name="RunManager" selected="Python.AutoWhiteBalance">
     <configuration name="AWB" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Autonomous_Car" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,6 +54,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/white_balance/AWB.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AutoWhiteBalance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Autonomous_Car" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AutoWhiteBalance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,27 +125,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DeepAWB" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Autonomous_Car" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/white_balance/Deep_White_Balance/PyTorch" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/white_balance/Deep_White_Balance/PyTorch/DeepAWB.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="calibration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Autonomous_Car" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -314,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AutoWhiteBalance" />
         <item itemvalue="Python.Calibration" />
         <item itemvalue="Python.calibration" />
         <item itemvalue="Python.AWB" />
         <item itemvalue="Python.DAWB_camera (1)" />
-        <item itemvalue="Python.DeepAWB" />
       </list>
     </recent_temporary>
   </component>
