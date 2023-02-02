@@ -1,0 +1,3 @@
+python train.py --img 200 --batch 8 --epochs 50 --data C:/Traffic_Light/data.yaml --cfg ./models/yolov5s.yaml --weights yolov5s.pt --name traffic_yolov5s_results
+python detect.py --weights C:\Users\011\PycharmProjects\GIGACHA\yolov5\runs\train\traffic_yolov5s_results\weights\best.pt --source C:\GIGACHA_video\traffic_video\output10_.avi
+python detect.py --weights runs\train\traffic_yolov5s_results\weights\best.pt --source video\output41_.avi

@@ -82,7 +82,7 @@ for label_dir in tqdm.tqdm(label_dirs):
 #         line2 = list(map(float, line.strip().split()))
 
 ## 새로운 image랑 label 경로
-img_dir = 'C:/Traffic_Light/images'
+img_dir = 'C:/Users/011/PycharmProjects/GIGACHA/Traffic_Light/images'
 img_list = glob(img_dir + '/*.jpg')
 print(len(img_list))
 
@@ -92,7 +92,7 @@ train_img_list, val_img_list = train_test_split(img_list, test_size=0.1, random_
 print(len(train_img_list), len(val_img_list))
 
 ## train test 경로저장 파일
-data_dir = Path('C:/Traffic_Light')
+data_dir = Path('C:/Users/011/PycharmProjects/GIGACHA/Traffic_Light')
 with open(data_dir / 'train.txt', 'w') as f:
     f.write('\n'.join(train_img_list) + '\n')
 
@@ -114,3 +114,20 @@ with open(data_dir / 'data.yaml', 'w') as f:
   yaml.dump(data, f)
 
 print(data)
+
+## colab val.txt 경로를 local 환경으로 변경
+data_dir = Path('C:/Users/011/PycharmProjects/GIGACHA/Traffic_Light')
+image_dir = data_dir / 'images'
+val_txt_dir = data_dir / 'val.txt'
+val_txt_local_dir = data_dir / 'val_local.txt'
+
+local_dirs = []
+with open(val_txt_dir, 'r', encoding="UTF-8") as f:
+    lines = f.readlines()
+    for line in lines:
+        line = line.strip()
+        local_dirs += [image_dir / os.path.basename(line)]
+
+with open(val_txt_local_dir, 'w') as f:
+    for line in local_dirs:
+        f.write(str(line) + '\n')

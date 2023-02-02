@@ -1,0 +1,10 @@
+.idea/
+.tmp.driveupload/
+__pycache__
+
+Traffic_Light/
+video/
+yolov5/runs
+data/
+camera_parameter/
+
