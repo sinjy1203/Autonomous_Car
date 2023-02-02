@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from skimage.io import imread, imshow
 from skimage import img_as_ubyte
 from matplotlib.patches import Rectangle
+from test2 import Homomorphic
 
 class AWB:
     def __init__(self):
@@ -28,34 +29,18 @@ class AWB:
         if mode == 'max':
             image_gt = ((image * 1.0 / image_patch.max(axis=(0, 1))).clip(0, 1))
 
-def mouse_event(event, x, y, flags, param):
-    global pos
-    if event == cv.EVENT_FLAG_LBUTTON:
-        pos += [(x, y)]
-
 if __name__ == "__main__":
     awb = AWB()
-    cap = cv.VideoCapture(0)
-    cap.set(cv.CAP_PROP_FRAME_WIDTH, 440)
-    cap.set(cv.CAP_PROP_FRAME_HEIGHT, 440)
-    W = cap.get(cv.CAP_PROP_FRAME_WIDTH)
-    H = cap.get(cv.CAP_PROP_FRAME_HEIGHT)
-    print(W, H)
+    cap = cv.VideoCapture('C:/GIGACHA_video/traffic_video/output21_.avi')
 
     while True:
         global pos
         ret, img = cap.read()
-        # img_white_patch = awb.white_patch(img)
-        # img_gray_world = awb.gray_world(img)
         pos = []
-        # img_ground_truth = awb.ground_truth(img, )
-        # final = np.hstack((img, img_white_patch, img_gray_world))
-        cv.imshow('AWB', img)
-        cv.setMouseCallback("AWB", mouse_event, img)
-        print(pos)
-        # print(final.shape)
-        # final = final.astype(np.uint8)
-        # cv.imshow('AWB', img)
+        # img_awb = awb.gray_world(img).astype(np.uint8)
+        img_ho = Homomorphic(img)
+        cv.imshow('original', img)
+        cv.imshow('Homomorphic', img_ho)
         if cv.waitKey(20) & 0xFF == ord('q'):
             break
 

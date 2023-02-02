@@ -2,12 +2,17 @@ import cv2
 import sys
 
 # Load Web Camera
-cap = cv2.VideoCapture(1)  # load WebCamera
+cap = cv2.VideoCapture(1)
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+# cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 3) # auto mode
+# cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 1) # manual mode
+cap.set(cv2.CAP_PROP_EXPOSURE, -11) # -1 to -13
 if not (cap.isOpened()):
     print("File isn't opend!!")
 
 # Set Video File Property
-videoFileName = 'video/output11.avi'
+videoFileName = 'video/output42.avi'
 w = round(cap.get(cv2.CAP_PROP_FRAME_WIDTH))  # width
 h = round(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))  # height
 fps = cap.get(cv2.CAP_PROP_FPS)  # frame per second
