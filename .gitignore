@@ -1,5 +1,6 @@
 .idea/
 .tmp.driveupload/
+.tmp.drivedownload/
 __pycache__
 
 Traffic_Light/
@@ -7,4 +8,8 @@ video/
 yolov5/runs
 data/
 camera_parameter/
+
+*.png
+*.avi
+*.mp4
 

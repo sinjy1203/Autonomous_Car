@@ -7,17 +7,17 @@ cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 # cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 3) # auto mode
 # cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 1) # manual mode
-cap.set(cv2.CAP_PROP_EXPOSURE, -11) # -1 to -13
+# cap.set(cv2.CAP_PROP_EXPOSURE, -11) # -1 to -13
 if not (cap.isOpened()):
     print("File isn't opend!!")
 
 # Set Video File Property
-videoFileName = 'video/output42.avi'
+videoFileName = './video_data/output.avi'
 w = round(cap.get(cv2.CAP_PROP_FRAME_WIDTH))  # width
 h = round(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))  # height
 fps = cap.get(cv2.CAP_PROP_FPS)  # frame per second
 fourcc = cv2.VideoWriter_fourcc(*'DIVX')  # fourcc
-delay = round(1000 / fps)  # set interval between frame
+# delay = round(1000 / fps)  # set interval between frame
 
 # Save Video
 out = cv2.VideoWriter(videoFileName, fourcc, fps, (w, h))
@@ -35,7 +35,7 @@ while (True):  # Check Video is Available
 
         cv2.imshow('Original VIDEO', frame)
 
-        if cv2.waitKey(delay) == 27:  # wait 10ms until user input 'esc'
+        if cv2.waitKey(1) == ord('q'):  # wait 10ms until user input 'esc'
             break
     else:
         print("ret is false")
