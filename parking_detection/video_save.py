@@ -2,17 +2,21 @@ import cv2
 import sys
 
 # Load Web Camera
-cap = cv2.VideoCapture(1)
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+# cap = cv2.VideoCapture(1)
+
+cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
+# cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+# cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 # cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 3) # auto mode
 # cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 1) # manual mode
-# cap.set(cv2.CAP_PROP_EXPOSURE, -11) # -1 to -13
+cap.set(cv2.CAP_PROP_EXPOSURE, -9) # -1 to -13
 if not (cap.isOpened()):
     print("File isn't opend!!")
 
 # Set Video File Property
-videoFileName = './video_data/output.avi'
+videoFileName = './video_data/output302.avi'
 w = round(cap.get(cv2.CAP_PROP_FRAME_WIDTH))  # width
 h = round(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))  # height
 fps = cap.get(cv2.CAP_PROP_FPS)  # frame per second
@@ -20,7 +24,8 @@ fourcc = cv2.VideoWriter_fourcc(*'DIVX')  # fourcc
 # delay = round(1000 / fps)  # set interval between frame
 
 # Save Video
-out = cv2.VideoWriter(videoFileName, fourcc, fps, (w, h))
+print(fps, w, h)
+out = cv2.VideoWriter(videoFileName, fourcc, 30, (w, h))
 if not (out.isOpened()):
     print("File isn't opend!!")
     cap.release()
@@ -29,7 +34,7 @@ if not (out.isOpened()):
 # Load frame and Save it
 while (True):  # Check Video is Available
     ret, frame = cap.read()  # read by frame (ret=TRUE/FALSE)s
-
+    print(cap.get(cv2.CAP_PROP_FPS))
     if ret:
         out.write(frame)  # save video frame
 
