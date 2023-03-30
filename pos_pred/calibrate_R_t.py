@@ -12,40 +12,40 @@ if not data_dir.exists():
 param_dir = Path('camera_param')
 
 
-# # Load Web Camera
-# cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
-# cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-# cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
-# cap.set(cv2.CAP_PROP_AUTOFOCUS, 0)
-#
-#
-# # cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 3) # auto mode
-# # cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 1) # manual mode
-# cap.set(cv2.CAP_PROP_EXPOSURE, -8) # -1 to -13
-# if not (cap.isOpened()):
-#     print("File isn't opend!!")
-#
-# w = round(cap.get(cv2.CAP_PROP_FRAME_WIDTH))  # width
-# h = round(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))  # height
-#
-# # Load frame and Save it
-# while (True):  # Check Video is Available
-#     ret, frame = cap.read()  # read by frame (ret=TRUE/FALSE)s
-#     if ret:
-#         cv2.imshow('img', frame)
-#         if cv2.waitKey(1) == ord('c'):
-#             img = cv2.imwrite(str(data_dir / 'square.png'), frame)
-#             print('save square.png')
-#             break
-#
-#         if cv2.waitKey(1) == ord('q'):  # wait 10ms until user input 'esc'
-#             break
-#     else:
-#         print("ret is false")
-#         break
-#
-# cap.release()  # release memory
-# cv2.destroyAllWindows()  # destroy All Window
+# Load Web Camera
+cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+cap.set(cv2.CAP_PROP_AUTOFOCUS, 0)
+
+
+# cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 3) # auto mode
+# cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 1) # manual mode
+cap.set(cv2.CAP_PROP_EXPOSURE, -3) # -1 to -13
+if not (cap.isOpened()):
+    print("File isn't opend!!")
+
+w = round(cap.get(cv2.CAP_PROP_FRAME_WIDTH))  # width
+h = round(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))  # height
+
+# Load frame and Save it
+while (True):  # Check Video is Available
+    ret, frame = cap.read()  # read by frame (ret=TRUE/FALSE)s
+    if ret:
+        cv2.imshow('img', frame)
+        if cv2.waitKey(1) == ord('c'):
+            img = cv2.imwrite(str(data_dir / 'square.png'), frame)
+            print('save square.png')
+            break
+
+        if cv2.waitKey(1) == ord('q'):  # wait 10ms until user input 'esc'
+            break
+    else:
+        print("ret is false")
+        break
+
+cap.release()  # release memory
+cv2.destroyAllWindows()  # destroy All Window
 
 
 # mouse callback to get pixel
@@ -54,7 +54,8 @@ img_square = cv2.imread(str(data_dir / 'square.png'))
 # undistort
 mtx, dist = np.load(str(param_dir / 'mtx.npy')), np.load(str(param_dir / 'dist.npy'))
 img_square_u = UnDistort(img_square, mtx, dist, img_square.shape[:2][::-1])
-
+cv2.imwrite(str(data_dir / 'square_u.png'), img_square_u)
+# exit()
 points_2D = []
 
 def mouse_event(event, x, y, flags, param):
