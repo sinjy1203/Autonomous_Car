@@ -12,7 +12,8 @@ max_line_gap = 60
 ##
 def gray_blur_edges(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    blur_gray = cv2.GaussianBlur(gray, (5, 5), 0)
+    # blur_gray = cv2.GaussianBlur(gray, (5, 5), 0)
+    blur_gray = cv2.medianBlur(gray, ksize=13)
     edges = cv2.Canny(blur_gray, 53, 122)
     return edges
 
@@ -60,7 +61,9 @@ def lane_detect(img):
         cv2.line(img, (x1, y1), (x2, y2), (0, 0, 255), 2)
     return img
 
-img = cv2.imread('./data/cross1.png', cv2.IMREAD_COLOR)
+path = "C:/Users/sinjy/PycharmProjects/GIGACHA/parking_detection/data/parking_line.png"
+
+img = cv2.imread(path, cv2.IMREAD_COLOR)
 img = lane_detect(img)
 cv2.imshow('img', img)
 cv2.waitKey(0)
@@ -83,17 +86,17 @@ cv2.destroyAllWindows()
 # cv2.destroyAllWindows()
 
 ##
-import cv2
-import matplotlib.pyplot as plt
-img = cv2.imread("./parking_detection/data/cross0.png")
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-plt.imshow(gray, cmap='gray')
-plt.show()
-
-##
-blur = cv2.GaussianBlur(gray, (5, 5), 0)
-plt.imshow(blur, cmap='gray')
-plt.show()
-
-##
-edges = cv2.Canny(blur)
+# import cv2
+# import matplotlib.pyplot as plt
+# img = cv2.imread("./parking_detection/data/cross0.png")
+# gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+# plt.imshow(gray, cmap='gray')
+# plt.show()
+#
+# ##
+# blur = cv2.GaussianBlur(gray, (5, 5), 0)
+# plt.imshow(blur, cmap='gray')
+# plt.show()
+#
+# ##
+# edges = cv2.Canny(blur)
