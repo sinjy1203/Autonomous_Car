@@ -21,7 +21,7 @@ cap.set(cv2.CAP_PROP_AUTOFOCUS, 0)
 
 # cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 3) # auto mode
 # cap.set(cv2.CAP_PROP_AUTO_EXPOSURE, 1) # manual mode
-cap.set(cv2.CAP_PROP_EXPOSURE, -3) # -1 to -13
+cap.set(cv2.CAP_PROP_EXPOSURE, -4) # -1 to -13
 if not (cap.isOpened()):
     print("File isn't opend!!")
 
